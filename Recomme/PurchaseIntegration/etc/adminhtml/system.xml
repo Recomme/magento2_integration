@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="recomme" translate="label" sortOrder="10">
+            <label>Recomme</label>
+        </tab>
+        <section id="recomme_api" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>General</label>
+            <tab>recomme</tab>
+            <resource>Recomme_PurchaseIntegration::recomme_config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>General Configuration</label>
+                <field id="customer_key" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Customer Key</label>
+                    <comment>Customer key to call recomme API</comment>
+                </field>
+
+                <field id="api_key" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>API Key</label>
+                    <comment>API key to call recomme API</comment>
+                </field>
+
+                <field id="statuses" translate="label" type="multiselect" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Statuses</label>
+                    <source_model>Magento\Sales\Model\Config\Source\Order\Status</source_model>
+                    <comment>You can choose multiple statuses</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
