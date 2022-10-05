@@ -13,8 +13,9 @@ Plugin for Magento 2 provides integration for basic recommendation process.
 1. Grab `customer_key` and `api_key` from your Recomme admin panel (you need to add new integration under Integrations menu item)
 2. Open your Magento admin panel
 3. Go to `Stores` -> `Configuration`
-4. You should fill Api Key, Customer Key
-5. Then pick statuses that will cause order to be counted as successfull recommendation (use CTRL or Command key to select multiple)
+4. Click Recomme tab
+5. You should fill Api Key, Customer Key
+6. Then pick statuses that will cause order to be counted as successfull recommendation (use CTRL or Command key to select multiple)
 (see screenshot below)
 <img width="1555" alt="image" src="https://user-images.githubusercontent.com/6068311/194130877-04b64732-8cb8-4bac-9652-b61e903da55d.png">
 
